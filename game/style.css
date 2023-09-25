@@ -1,0 +1,53 @@
+h1 { 
+    color:maronn;
+    font-family: sans-serif;
+    font-size: 46px;
+    margin-right: 100px;
+}
+blockquote { 
+    background-color: lightgray;
+    padding: 3rem;
+    width: 60vw;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+h2, h3 { 
+    font-family: 'Roboto', sans-serif;
+    color: maroon;
+}
+main {
+    font-family: Arial, sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 0 auto;
+    width: 80vw;
+    padding: 3rem;
+}
+body {
+    background-color: tan;
+}
+p {
+    margin-left: 100px;
+}
+
+li {
+    margin-left: 100px;
+}
+
+img.right {
+    float:right; 
+    margin: 0 12px;
+}
+footer {
+    background-color: lightgray;
+    padding: 3rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+a {
+    color: purple;
+}
+

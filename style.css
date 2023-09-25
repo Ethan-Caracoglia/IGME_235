@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+main {
+    color: orange;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: orange;
+    padding: 3rem;
+    width: 60vw;
+    align-self: center;
+    margin: 0 auto;
+}
+
+#Title {
+    color: orange;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: tan;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:active {
+    color: violet;
+}
+
+#git {
+    font-style: italic;
+}
+
+ul.list {
+    font-style: oblique;
+}
+
+p.para {
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+    margin: auto;
+    padding: 2rem;
+}
