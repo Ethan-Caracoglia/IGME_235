@@ -1,0 +1,76 @@
+h2, h3 {
+    border-bottom-width: 1px;
+    border-bottom: solid;
+    border-bottom-color: red;
+}
+
+figure {
+    float: right;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+
+}
+
+figure img {
+    width: 100%;
+    max-width: 650px;
+}
+
+h2 {
+    clear: right;
+}
+
+div img {
+    float: left;
+    width: 2rem;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 1em;
+}
+
+header, main, footer {
+    width: 90%;
+}
+
+section{
+    display: flex;
+    flex-flow: wrap;
+}
+
+.tet {
+    flex: 1, 1, 450px;
+    text-align: center;
+}
+
+.tet img {
+    width: 10cqi;
+}
+
+span {
+    display:block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    size: 10rem;
+    font-size: 5em;
+    font-style: oblique;
+}
+
+.aliases {
+    text-align: left;
+}
+
+.tetsquare img {
+    width: 11cqi;
+}
+
+.tetlong img {
+    width: 12%;
+}
