@@ -1,0 +1,290 @@
+@font-face {
+    font-family: intelLight;
+    src: url(../media/IntelOneMono-Light.ttf);
+}
+
+@font-face {
+    font-family: intelRegular;
+    src: url(../media/IntelOneMono-Regular.ttf);
+}
+
+@media screen and (min-width: 1400px) {
+
+main {
+    font-family: intelRegular;
+    margin-left: 6vw;
+    margin-right: 8vw;;
+}
+
+body {
+    background-color: white;
+}
+
+
+header>.logo {
+    position: absolute;
+        height: 100px;
+        width: 190px;
+        left: 4.1vw;
+}
+
+header>.photo {
+    margin-top: 50px;
+    height: 600px;
+    width: 1610px;
+}
+
+h2 {
+    position: absolute;
+    font-family: intelLight;
+    left: 250px;
+    top: 250px;
+    background-color: rgba(221, 5, 5, 0.4);
+    width: 400px;
+    height: 400px;
+    color: white;
+    line-height: 70px;
+    padding-left: 30px;
+    padding-top: 60px;
+    font-size: 4rem;
+}
+
+.rySquares {
+    position: absolute;
+    right: 730px;
+    height: 130px;
+}
+
+.bySquares {
+    position: absolute;
+    top: 1300px;
+    right: 220px;
+    height: 300px;
+}
+
+.squares {
+    height: 120px;
+}
+
+.computer, .umbrella, .airplane, .scholar, .banner {
+    position: absolute;
+}
+
+.umbrella {
+    left: 150px;
+    top: 950px;
+    height: 200px;
+}
+
+.airplane {
+    right: 220px;
+    top: 920px;
+    height: 220px;
+}
+
+.computer {
+    width: 428px;
+    top: 1408px;
+    left: 132px;
+}
+
+.scholar {
+    top: 1500px;
+    right: 730px;
+    height: 170px;
+    top: 1500px;
+}
+
+.banner {
+    height: 180px;
+    left: 250px;
+    top: 1720px;
+}
+
+.headphones {
+    width: 500px;
+}
+
+.subHeader {
+    margin-right: 6vw;
+    font-size: 1.2em;
+    width: 440px;
+    float: right;
+}
+
+footer {
+    float: right;
+    margin-top: 70px;
+}
+
+footer>p {
+    padding-right: 80px;
+}
+
+.qr {
+    position: absolute;
+    right: 175px;
+    top: 2030px;
+}
+
+/*Don't forget to change this*/
+p {
+    margin: 10px;
+    padding: 10px;
+} 
+
+.wrapper {
+    font-size: 1.7em;
+    line-height: 1em;
+}
+
+
+.grid1 {
+    display: grid;
+    margin-top: 250px;
+    height: 320px;
+
+    grid-template-areas: "gItem1 gItem2 gItem3";
+
+    grid-template-columns: 9fr 5fr 8fr;
+}
+
+
+.grid2 {
+    display: grid;
+    height: 470px;
+    
+    grid-template-areas: "ggItem1 ggItem2 ggItem3 ybSquares"
+                         "ggItem1 ggItem2 ggItem4 ggItem4";
+
+    grid-template-columns: 8fr 7fr 10fr 4fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid3 {
+    display: grid;
+    height: 250px;
+
+    grid-template-areas: "gggItem1 gggItem1 gggItem2 gggItem3";
+    
+    grid-template-columns: 3fr 4fr 4fr 3fr;
+}
+
+
+.grid4 {
+    display: grid;
+    position: absolute;
+    height: 500px;
+    width: 450px;
+    top: 1540px;
+    left: 450px;
+    font-size: 1.9em;
+
+    grid-template-areas: "ggggItem1"
+                         "ggggItem2";
+}
+
+.gItem1, .gItem3 {
+    background-color: rgb(245, 245, 245);
+}
+
+.gItem1 {
+    justify-items: center;
+    padding-top: 100px;
+    padding-left: 220px;
+}
+
+.gItem2 {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    padding-left: 30px;
+    padding-top: 110px;
+}
+
+.gItem3 {
+    padding-top: 200px;
+}
+
+
+.ggItem1 {
+    background-color: rgb(223,91,112);
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.ggItem2 {
+    background-color: rgb(0, 170, 255);
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.ggItem3 {
+    background-color: rgb(0, 153, 255);
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+.ggItem4 {
+    background-color: rgb(223,91,112);
+    padding-left: 230px;
+    padding-top: 55px;
+}
+
+.ggItem1, .ggItem3, .ggItem4 {
+    color: white;
+}
+
+
+.gggItem1 {
+    background-color: rgb(245, 245, 245);
+    padding-top: 200px;
+    padding-left: 40px;
+}
+
+.gggItem2 {
+
+}
+
+.gggItem3 {
+    background-color: rgb(245, 245, 245);
+    padding-left: 20px;
+    padding-top: 80px;
+}
+
+.ggggItem1 {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border-style: solid;
+    border-width: 20px;
+    margin-bottom: -10px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.ggggItem2 {
+    background-color: rgb(223,91,112);
+    color: white;
+    border-style: solid;
+    border-width: 20px;
+    padding-left: 60px;
+    margin-top: -10px;
+    padding-top: 40px;
+}
+
+.gItem1 {grid-area: gItem1;}
+.gItem2 {grid-area: gItem2;}
+.gItem3 {grid-area: gItem3;}
+
+.ggItem1 {grid-area: ggItem1;}
+.ggItem2 {grid-area: ggItem2;}
+.ggItem3 {grid-area: ggItem3;}
+.ggItem4 {grid-area: ggItem4;}
+.ybSquares {grid-area: ybSquares;}
+
+.gggItem1 {grid-area: gggItem1;}
+.gggItem2 {grid-area: gggItem2;}
+.gggItem3 {grid-area: gggItem3;}
+
+.ggggItem1 {grid-area: ggggItem1;}
+.ggggItem2 {grid-area: ggggItem2;}
+}

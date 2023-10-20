@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Teko:wght@300&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+}
+    h1 {
+        font-family: Teko, sans-serif;
+        font-size: 5em;
+    }
+
+    .wrapper {
+        margin-right: 6vw;
+        margin-left: 6vw;
+        text-align: center;   
+    }
+
+    .logo {
+        width: 12vw;
+    }
+
+    .title-image {
+        width: 60vw;
+    }
+    
+    .grid {
+        display: grid;
+        border-style: solid;
+        background-color: rgb(10, 20, 80);
+        height: 160vh;
+    
+        grid-template-areas: "g1 g2 g3"
+                             "g4 g5 g6"
+                             "g7 g8 g9"
+                             "g10 g11 g12"
+                             "g13 g14 g15";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    div>p {
+        border-style: solid;
+        text-align: center;
+    }
+
+    .grid>div {
+        display: grid;
+        justify-content: center;
+        border-style:solid;
+    }
+    
+    
+.g1 {grid-area: g1}
+.g2 {grid-area: g2}
+.g3 {grid-area: g3}
+.g4 {grid-area: g4}
+.g5 {grid-area: g5}
+.g6 {grid-area: g6}
+.g7 {grid-area: g7}
+.g8 {grid-area: g8}
+.g9 {grid-area: g9}
+.g10 {grid-area: g10}
+.g11 {grid-area: g11}
+.g12 {grid-area: g12}
+.g13 {grid-area: g13}
+.g14 {grid-area: g14}
+.g15 {grid-area: g15}
+    
+@media screen and (min-width: 1200px) {
+
+    .grid {
+        grid-template-areas: "g1 g2 g3"
+                             "g4 g5 g6"
+                             "g7 g8 g9"
+                             "g10 g11 g12"
+                             "g13 g14 g15";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .grid{
+        grid-template-areas: "g1 g2"
+                             "g3 g4"
+                             "g5 g6"
+                             "g7 g8"
+                             "g9 g10"
+                             "g11 g12"
+                             "g13 g14"
+                             "g15 g15";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

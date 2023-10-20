@@ -1,0 +1,56 @@
+intel
+
+
+Do 
+Something 
+Exciting
+
+                                Intel offers a competetive total
+                                rewards benefits package that
+                                helps you achieve and maintain
+                                your best self, wherever life may
+                                take you.
+            
+
+Paid Sabbatical             Cash bonuses  
+4 weeks after 4 years       up to 5x per year           
+8 weeks after 7 years                                Intel Air Shuttle
+                                                     Between US Intel Offices
+
+Work from anywhere      3 flexible            Charitable giving
+Up to 60-days           work models           match up to
+                        Onsite                $10K per year
+                        Hybrid      
+                        Fully Remote           
+                                               Tuition Reimbursement
+                                               Up to 100% for
+                                               eligible programs
+
+
+                                            
+                    Employee Stock           
+                    Purchase Option           Medical, Dental,
+                    (ESPPs)                   Vision, Mental 
+                    2x per year               Wellness
+Peer Recognition
+Program    
+                    5%
+                    401K Match                      
+                                         
+                    
+                        Find something wonderful at:jobs.intel.com/students
+
+c Copyright Intel Corporation. All rights reserved. Intel and the hired  libso are trademarks of Intel Corporation in the U.S. and other countries.
+Other names and brands may be claimed as the property of others.
+
+
+
+background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 20px;
+    color: white;
+    font-size: 1em;
+    text-align: center;

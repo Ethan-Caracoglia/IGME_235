@@ -41,7 +41,7 @@ header, main, footer {
 }
 
 section{
-    display: flex;
+    display: flow;
     flex-flow: wrap;
 }
 

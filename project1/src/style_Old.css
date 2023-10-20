@@ -1,0 +1,18 @@
+#wrapper {
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr;
+    grid-template-rows: "row1"
+                        "row2"
+                        "row3";
+    height: 500px;
+}
+
+#boxRow1 {
+    grid-area: row1;
+}
+#boxRow2 {
+    grid-area: row2;
+}
+#boxRow3 {
+    grid-area: row3;
+}
