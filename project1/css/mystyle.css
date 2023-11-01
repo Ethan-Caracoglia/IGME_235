@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Teko:wght@300&display=swap');
 
+main {
+    background-image: url(../media/citadel.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
 body {
     background-color: black;
     color: white;
@@ -7,6 +14,36 @@ body {
     h1 {
         font-family: Teko, sans-serif;
         font-size: 5em;
+        background-color: rgb(10, 20, 80);
+        border-radius: 40px;
+        padding: 0.2em;
+        margin: auto;
+        width: 60vw;
+        border-style: solid;
+        border-color: rgb(240, 150, 0);
+    }
+
+    h2 {
+        background-color: rgb(10, 20, 80);
+        border-radius: 10px;
+        padding: 1.2em;
+        border-style: solid;
+        border-color: rgb(240, 150, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+    }
+
+    .subheader {
+        background-color: rgb(10, 20, 80);
+        border-radius: 10px;
+        font-size: 2em;
+        border-style: solid;
+        border-color: rgb(240, 150, 0);
+        width: 40vw;
+        margin: auto;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .wrapper {
@@ -17,16 +54,18 @@ body {
 
     .logo {
         width: 12vw;
-    }
-
-    .title-image {
-        width: 60vw;
+        filter: black;
+        background-color: rgb(10, 20, 80);
+        border-radius: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 3vh;
+        border-style: solid;
+        border-color: rgb(240, 150, 0);
     }
     
     .grid {
         display: grid;
-        border-style: solid;
-        background-color: rgb(10, 20, 80);
         height: 160vh;
     
         grid-template-areas: "g1 g2 g3"
@@ -41,12 +80,38 @@ body {
     div>p {
         border-style: solid;
         text-align: center;
+        margin: auto;
+        margin-top: 1em;
+        padding: 0.8em;
+        border-color: rgb(240, 150, 0);
+        font-family: Teko, sans-serif;
+        font-size: 2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        line-height: 1.5em;
     }
 
     .grid>div {
         display: grid;
+        background-color: rgb(10, 20, 80);
+        margin: 1vw;
         justify-content: center;
-        border-style:solid;
+        border-style: solid;
+        border-color: rgb(240, 150, 0);
+        border-radius: 40px;
+    }
+
+    .grid img {
+        border-style: solid;
+        border-color: rgb(240, 150, 0);
+        width: 8vw;
+        margin: 1em;
+    }
+
+    .g15 img {
+        width: 5vw;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     
@@ -65,6 +130,82 @@ body {
 .g13 {grid-area: g13}
 .g14 {grid-area: g14}
 .g15 {grid-area: g15}
+
+#stickyHome {
+    position: sticky;
+    top: 50vh;
+    margin-left: 70vw;
+    background-color: rgb(10, 20, 80);
+    border-style: solid;
+    border-color: rgb(240, 150, 0);
+    width: 12vw;
+    padding: 1em;
+    font-size: 2em;
+    margin-top: 20vh;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 255, 255);
+    border-color: rgb(240, 150, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(180, 100, 0);
+    border-color: rgb(180, 100, 0);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+  }
+
+.list {
+    margin: auto;
+    max-width: 40vw;
+}
+
+.list img {
+    width: 40vw;
+    border-style: solid;
+    border-color: rgb(240, 150, 0);
+}
+
+.l15 img {
+    width: 15vw;
+    border-style: none;
+}
+
+.list p {
+    background-color: rgb(10, 20, 80);
+    padding: 1em;
+    font-size: 1.6em;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    border-color: rgb(240, 150, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list h3 {
+    background-color: rgb(10, 20, 80);
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 3vh;
+    margin-top: 10vh;
+    padding: 1em;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;;
+    font-size: 3em;
+    border-style: solid;
+    border-color: rgb(240, 150, 0);
+    font-family: Teko, sans-serif;
+}
     
 @media screen and (min-width: 1200px) {
 
@@ -93,4 +234,52 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
+
+    .g15 img {
+        width: 10vw;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .list {
+        position: relative;
+        margin-left: 2vw;
+        margin-right: 13vw;
+        top: 10rem;
+    }
+
+    #stickyHome {
+    position: sticky;
+    top: 5vh;
+    margin-left: 75vw;
+    background-color: rgb(10, 20, 80);
+    border-style: solid;
+    border-color: rgb(240, 150, 0);
+    width: 3em;
+    font-size: 1em;
+    margin-top: 20vh;
+    z-index: 1;
+}
+
+.list img {
+    width: 80vw;
+    border-style: solid;
+    border-color: rgb(240, 150, 0);
+}
+
+.l15 img {
+    width: 70vw;
+    border-style: none;
+}
+
+.list p {
+    background-color: rgb(10, 20, 80);
+    padding: 1em;
+    font-size: 1.2em;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    border-color: rgb(240, 150, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70vw;
+}
 }

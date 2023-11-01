@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>web-apps-lab-2</title>
+	<style>
+		body{border:1px solid gray;}
+		p b{transform: rotate(20deg)}
+	</style>
+</head>
+<body>
+<h1>My Page</h1>
+<h2>Info</h2>
+<h2>Pictures</h2>
+<h2>More Info</h2>
+<p>Blah <b>Blah</b> Blah</p>
+<p>Blah <b>Blah</b> Blah</p>
+<p id="lastParagraph">Blah <b>Blah</b> Blah</p>
+<footer>Copyright &copy; <b>20XX</b></footer>
+<script>
+	"use strict"; 
+  
+  // add your own code here.
+  let h1 = document.querySelector('h1');
+    h1.innerHTML = "My UFO Page";
+
+    let h2one = document.querySelector('h2:nth-of-type(1)');
+    h2one.innerHTML = "My UFO Info";
+    let h2two = document.querySelector('h2:nth-of-type(2)');
+    h2two.innerHTML = "My UFO Pictures";
+    let h2three = document.querySelector('h2:nth-of-type(3)');
+    h2three.innerHTML = "";
+
+    let body = document.querySelector('body');
+    body.style.fontFamily = "sans-serif";
+    body.style.color = "#F10101";
+
+    let p1 = document.querySelector('p:nth-of-type(1)');
+    p1.innerHTML = 'Report your UFO sightings here: <a href="http://www.nuforc.org/">http://www.nuforc.org/</a>';
+    p1.style.color = "green";
+    p1.style.fontWeight = "bold";
+    p1.style.fontSize = "2em";
+    p1.style.textTransform = "uppercase";
+    p1.style.textShadow = "3px 2px #A44";
+
+    let p2 = document.querySelector('p:nth-of-type(2)');
+    p2.innerHTML = "";
+    let p3 = document.querySelector('p:nth-of-type(3)');
+    p3.innerHTML = '<img src="https://nuforc.org/wp-content/uploads/2022/04/S166027.jpeg" alt="UFO image">';
+
+    let footer = document.querySelector('footer');
+    let year = new Date();
+    year = year.getFullYear();
+    footer.innerHTML = '&copy ' + year + ' Ethan Caracoglia';
+	</script>
+</body>
+</html>
