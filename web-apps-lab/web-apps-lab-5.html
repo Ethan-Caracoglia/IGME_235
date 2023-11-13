@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Web Apps-5</title>
+	<title>web-apps-lab-5</title>
 	<style>
 		body{
 			font-family:sans-serif;
@@ -38,7 +38,39 @@
 </div>
 
 <script>
-/* Write your code here! */
+	let red = document.getElementById("colorGroupRed");
+	let green = document.getElementById("colorGroupGreen");
+	let blue = document.getElementById("colorGroupBlue");
+	let info = document.getElementById("info");
+	let submit = document.getElementById("colorButton");
+	let legend = document.querySelector("legend");
+	let color = "";
+
+	red.onchange = function(e) {
+		info.innerHTML = "You have selected red.";
+		color = e.target.value;
+	}
+
+	green.onchange = function(e) {
+		info.innerHTML = "You have selected green.";
+		color = e.target.value;
+	}
+
+	blue.onchange = function(e) {
+		info.innerHTML = "You have selected blue.";
+		color = e.target.value;
+	}
+
+
+	submit.onclick = function() {
+		if (color != "")
+		{
+			info.innerHTML = "You have confirmed your favorite color is " + color + ".";				
+			legend.style.color = color;
+		}
+	}
+
+	
 </script>
 </body>
 </html>
