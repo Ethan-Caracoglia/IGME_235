@@ -82,14 +82,14 @@ function dataLoaded(e) {
     //Start building an HTML string we will display to the user
     let results = obj.data;
     console.log("results.length = " + results.length);
-    let bigString = "<p><i>Here are " + results.length + " results for '" + displayTerm + "'</i></p>";
+    let bigString = "";
 
     //loop through the array of results
     for (let i = 0; i < results.length; i++) {
         let result = results[i];
 
         //Get the gif URL
-        let smallURL = result.images.fixed_width_small.url;
+        let smallURL = result.images.fixed_width_downsampled.url;
         if (!smallURL) {
             smallURL = "images/no-image-found.png";
         }
@@ -97,9 +97,12 @@ function dataLoaded(e) {
         //GEt the URL to the page
         let url = result.url;
 
+        //grab the rating
+        let rating = (result.rating ? result.rating : "NA").toUpperCase();
+
         //build a div for each result
         let line = `<div class ='result'><img src='${smallURL}' title='${result.id}'>`;
-        line += `<span><a target='_blank' href='${url}'>View on Giphy</a></span></div>`;
+        line += `<span><a target='_blank' href='${url}'>View on Giphy</a><p>Rating: ${rating}</p></span></div>`;
 
         bigString += line;
     }
@@ -108,7 +111,7 @@ function dataLoaded(e) {
     document.querySelector("#content").innerHTML = bigString;
 
     //Update the status
-    document.querySelector("#status").innerHTML = "<b>Success!</b>";
+    document.querySelector("#status").innerHTML = "<b>Success!</b><i> Here are " + results.length + " results for '" + displayTerm + "'</i>";
 }
 
 function dataError(e) {

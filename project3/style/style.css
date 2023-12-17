@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(238,238,255);
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-left: 40vw;
+}
+
+h2 {
+    margin-left: 40vw;
+}
+
+p {
+    margin-left: 40vw;
+}
+
+.under {
+    position: absolute;
+    top: 740px;
+}

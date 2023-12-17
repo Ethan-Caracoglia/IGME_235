@@ -1,0 +1,136 @@
+*{
+	font-family: 'Noto Sans Kawi', sans-serif;
+}
+
+body {
+	color: white;
+	background-color: black;
+	background: url(../images/title.gif) no-repeat center center fixed; 
+  	background-size: cover;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	background-color: black;
+	width: 95vw;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ 
+header h1{
+	color: cornflowerblue;
+	font-size: 3em;
+	font-family: 'Russo One', sans-serif;
+}
+
+#status{
+ font-style: italic;
+ height:32px;
+}
+
+.widgets {
+	margin: 10px 0;
+	text-align: center;
+}
+
+#wHolder {
+	background-color: cornflowerblue;
+	padding: 10px;;
+}
+
+#contentWrapper {
+	border-style: solid;
+	border-width: 2px;
+	padding: 10px;
+}
+
+#content {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 70px 20px;
+	width: 93vw;
+}
+
+#contentWrapper>p {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#status {
+	margin: 10px 0;
+}
+
+#spinner {
+	margin: 0 auto;
+}
+
+.result img {
+	width: 100%;
+	box-shadow: 7px 10px 20px -10px;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+}
+
+.result a {
+	color: cornflowerblue;
+}
+
+a:hover {
+	color: rgb(150, 180, 255);
+}
+
+a:active {
+	background: limegreen;
+	box-shadow : 0 0 6px rgba(0,0,0,.6);
+}
+
+a:visited {
+	color: rgb(150, 100, 150)
+}
+
+.result span {
+	order: -1;
+}
+
+button{
+  cursor : pointer;
+  padding-top: 0.5em;
+  border-style : solid;
+  border-radius : 2px;
+  font-size : 1rem;
+  font-weight : bold;
+  color : #fff;
+  text-decoration : none;
+}
+
+button.blue{
+	background: rgb(120, 169, 255);
+	font-size: 1.5em;
+	border-color: white;
+}
+
+button.copy {
+	margin-left: 10px;
+	background-color: orange;
+	font-size: small;
+}
+
+button:hover{
+	background: rgb(150, 180, 255);
+}
+
+button:active{
+	background: limegreen;
+	box-shadow : 0 0 6px rgba(0,0,0,.6);
+}
+
+button:focus {
+	outline:0;
+}
